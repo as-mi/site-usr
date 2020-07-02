@@ -22,7 +22,7 @@ function usr_enqueue_style() {
     // These are scripts, but they're required for Bootstrap
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js');
     wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js');
-    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array('jquery', 'popper'));
+    wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', array('jquery', 'popper'));
 
     // Add our own style
     wp_enqueue_style('usr', get_stylesheet_uri(), array('bootstrap'));
