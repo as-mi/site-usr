@@ -1,7 +1,7 @@
 /*
 Theme Name: Site USR
-Author: Gabriel Majeri
-Author URI: https://github.com/GabrielMajeri
+Author: ASMI
+Author URI: https://github.com/as-mi
 Description: Temă custom pentru Uniunea Studenților din România.
 Version: 1.0
 */
@@ -48,7 +48,7 @@ body {
   top: 32px;
 }
 
-#menu-primary-menu a {
+#menu-primary-menu a, .wp-block-latest-posts li a {
   padding: 0.5rem 1rem;
   color: #fff;
 }
@@ -59,6 +59,8 @@ body {
 
 main {
   text-align: center;
+
+  margin-top: 10rem;
 
   /* Temporarily add something to make it scroll */
   min-height: 100rem;
