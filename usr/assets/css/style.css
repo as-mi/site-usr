@@ -1,0 +1,91 @@
+/*
+Theme Name: Site USR
+Author: ASMI
+Author URI: https://github.com/as-mi
+Description: Temă custom pentru Uniunea Studenților din România.
+Version: 1.0
+*/
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url(assets/fonts/Galano\ Grotesque\ Semi\ Bold.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url(assets/fonts/Galano\ Grotesque\ Alt\ Bold.otf);
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Galano Grotesque';
+  background-color: rgb(0, 0, 100);
+  color: white;
+}
+
+/* Fonturi mai mari pe dispozitivele mai late */
+@media (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+.navbar {
+  background-color: rgba(0, 0, 32, 0.25);
+
+  /* Fix the navbar to the top of the page */
+  position: sticky;
+  top: 0;
+}
+
+/* When the admin bar is displayed, move the nav bar a bit more to the bottom. */
+.admin-bar .navbar {
+  top: 32px;
+}
+
+#menu-primary-menu a,
+.wp-block-latest-posts li a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+#menu-primary-menu a:hover {
+  color: #ddf;
+}
+
+main {
+  text-align: center;
+
+  margin-top: 10rem;
+
+  /* Temporarily add something to make it scroll */
+  min-height: 100rem;
+}
+
+#social-media-icons {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+}
+
+#social-media-icons a {
+  padding: 0.5rem;
+}
+
+/* Smaller icons on mobile, otherwise they won't fit */
+#social-media-icons img {
+  max-width: 32px;
+}
+
+@media (min-width: 768px) {
+  #social-media-icons img {
+    max-width: 100%;
+  }
+}
