@@ -1,4 +1,5 @@
 <footer>
+  <a href="https://www.instagram.com/studentie.usr/" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
       <title>logo-instagram</title>
       <g fill="#020202">
@@ -11,6 +12,8 @@
         </path>
       </g>
     </svg>
+  </a>
+  <a href="https://www.facebook.com/UniuneaStudentilordinRomania" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
       <title>logo-facebook</title>
       <g fill="#020202">
@@ -19,6 +22,8 @@
         </path>
       </g>
     </svg>
+  </a>
+  <a href="https://www.youtube.com/channel/UC4XbGVwfK9ekv3DrNuuqvtQ" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
       <title>logo-youtube</title>
       <g fill="#020202">
@@ -27,6 +32,8 @@
         </path>
       </g>
     </svg>
+  </a>
+  <a href="https://www.linkedin.com/company/uniunea-studentilor-din-romania" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
       <title>logo-linkedin</title>
       <g fill="#020202">
@@ -35,6 +42,7 @@
         </path>
       </g>
     </svg>
+  </a>
   </footer>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/responsive-nav.js"></script>
   <?php wp_footer(); ?>

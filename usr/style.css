@@ -14,8 +14,12 @@ Version: 1.0
   --primary-color: #073A79;
   --primary-color-transparent: rgba(7, 58, 121, 0.7);
   --accent-color: hsl(213, 50%, 10%);
-  --accent-color-transparent: hsla(213, 50%, 10%, 0.6);
+  --accent-color-transparent: rgba(13, 24, 38, 0.6);
   --text-color: #fff;
+
+  --header-height-desktop: 5rem;
+  --header-height-mobile: 4rem;
+  --footer-height: 2.5rem;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -52,8 +56,7 @@ body {
 }
 
 main {
-  padding-bottom: 2.5rem;
-  /* dimensiunea footer-ului */
+  padding-bottom: var(--footer-height);
 }
 
 .collapsed {
@@ -62,12 +65,14 @@ main {
 
 /* HEADER */
 header {
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color-transparent);
   position: relative;
   padding: 10px 30px;
+  height: var(--header-height-desktop);
 }
 
 /* When the admin bar is displayed, move the nav bar a bit more to the bottom. */
@@ -81,7 +86,6 @@ header {
 }
 
 .header-nav {
-  z-index: 9999;
   transition: transform 0.5s ease-in-out;
   transform: scaleY(1);
   transform-origin: top;
@@ -142,7 +146,7 @@ header {
 
 @media only screen and (max-width: 900px) {
   header {
-    height: 70px;
+    height: var(--header-height-mobile);
     justify-content: center;
     position: fixed;
     width: 100%;
@@ -169,7 +173,7 @@ header {
 
   .header-nav {
     position: fixed;
-    top: 70px;
+    top: var(--header-height-mobile);
     left: 0;
   }
 
@@ -185,24 +189,23 @@ header {
 }
 
 /* FOOTER */
-footer,
-.footer2 {
+footer {
   background-color: var(--primary-color-transparent);
   display: flex;
   position: absolute;
   bottom: 0;
-  height: 2.5rem;
-  width: 100%;
+  height: var(--footer-height);
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
 
-footer>svg {
+footer svg {
   padding: 0 15px;
   width: 30px;
   height: auto;
 }
 
-footer>svg>g {
+footer svg>g {
   fill: var(--text-color);
 }
