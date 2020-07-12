@@ -20,9 +20,20 @@ function usr_enqueue_style() {
     // Add PureCSS modules
     wp_enqueue_style('purecss', 'https://unpkg.com/purecss@2.0.3/build/pure-min.css');
 
-    // Add own stylesheets
+    // Add own stylesheet
     wp_enqueue_style('main', get_stylesheet_uri(), array('purecss'));
-    wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss'));
+
+    // Add extra stylesheet depending on page
+    if(is_front_page()){
+        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array());
+    }
+    if(is_page('cons-dir')){
+        wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array());
+    }
+    if(is_page('structura')){
+        wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array());
+    }
+    
 
 }
 

@@ -19,23 +19,26 @@
       </g>
     </svg>
 
-    <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo USR">
+    <a href="/index.php">
+      <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo USR">
+    </a>
+    
     <ul class="header-nav pure-menu-list">
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-        <a href="despre.html" class="pure-menu-link">Despre</a>
+        <a href="/despre" class="pure-menu-link">Despre</a>
         <ul class="pure-menu-children">
-          <li class="pure-menu-item"><a href="cons_dir.html" class="pure-menu-link">Consiliu Director</a></li>
-          <li class="pure-menu-item"><a href="structura.html" class="pure-menu-link">Structura</a></li>
-          <li class="pure-menu-item"><a href="statut.html" class="pure-menu-link">Statut</a></li>
+          <li class="pure-menu-item"><a href="/cons-dir" class="pure-menu-link">Consiliu Director</a></li>
+          <li class="pure-menu-item"><a href="/structura" class="pure-menu-link">Structura</a></li>
+          <li class="pure-menu-item"><a href="/statut" class="pure-menu-link">Statut</a></li>
         </ul>
       </li>
-      <li class="pure-menu-item"><a href="proiecte.html" class="pure-menu-link">Proiecte</a></li>
-      <li class="pure-menu-item"><a href="membri.html" class="pure-menu-link">Membri</a></li>
-      <li class="pure-menu-item"><a href="training.html" class="pure-menu-link">Training-uri</a></li>
-      <li class="pure-menu-item"><a href="news.html" class="pure-menu-link">News</a></li>
-      <li class="pure-menu-item"><a href="comunicate.html" class="pure-menu-link">Comunicate</a></li>
-      <li class="pure-menu-item"><a href="parteneri.html" class="pure-menu-link">Parteneri</a></li>
-      <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">Contact</a></li>
+      <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Proiecte</a></li>
+      <li class="pure-menu-item"><a href="/membri" class="pure-menu-link">Membri</a></li>
+      <li class="pure-menu-item"><a href="/traininguri" class="pure-menu-link">Training-uri</a></li>
+      <li class="pure-menu-item"><a href="/news" class="pure-menu-link">News</a></li>
+      <li class="pure-menu-item"><a href="/comunicate" class="pure-menu-link">Comunicate</a></li>
+      <li class="pure-menu-item"><a href="/parteneri" class="pure-menu-link">Parteneri</a></li>
+      <li class="pure-menu-item"><a href="/contact" class="pure-menu-link">Contact</a></li>
     </ul>
     <div class="header-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
