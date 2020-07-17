@@ -25,16 +25,17 @@ function usr_enqueue_style() {
 
     // Add extra stylesheet depending on page
     if(is_front_page()){
-        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array());
+        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss', 'main'));
     }
     if(is_page('cons-dir')){
-        wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array());
+        wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array('purecss', 'main'));
     }
     if(is_page('structura')){
-        wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array());
+        wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array('purecss', 'main'));
     }
-    
-
+    if(is_page('despre')){
+        wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/despre.css', array('purecss', 'main'));
+    }
 }
 
 add_action('wp_enqueue_scripts', 'usr_enqueue_style');

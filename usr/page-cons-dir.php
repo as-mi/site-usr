@@ -5,39 +5,32 @@
     <p class="hero-text">
       Cons dir
     </p> -->
-    <div class="structura-text">
+    <div class="textbox left-textbox">
       <h1>Consiliul Director</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit ullam natus enim, deserunt odit fugiat, molestias magnam error ea hic quia obcaecati nobis numquam ducimus eius, eos totam accusamus nemo. Illo quod vero illum, architecto recusandae amet accusantium, provident rerum dicta praesentium sed deleniti saepe aut dolores quia! Assumenda!</p>
     </div>
 
     <div class="wrapper">
-      <div class="structura-cerc">
-        <!-- <a href="#" id="r1">Presedinte</a>
-        <a href="#" id="r2">Vicepresedinte<br>Zona Vest</a>
-        <a href="#" id="r3">Prim<br>Vicepresedinte</a>
-        <a href="#" id="r4">Vicepresedinte<br><span>Zona Centru-Nord</span></a>
-        <a href="#" id="r5">Secretar<br>General</a>
-        <a href="#" id="r6">Vicepresedinte<br><span>Zona Est</span></a>
-        <a href="#" id="r7">Director<br>General</a>
-        <a href="#" id="r8">Vicepresedinte<br><span>Zona Sud-Vest</span></a>
-        <a href="#" id="r9">Vicepresedinte<br>Externe</a>
-        <a href="#" id="r10">Vicepresedinte<br><span>Zona Sud-Est</span></a>
-        <p id="centru">Consiliul<br>Director</p> -->
+      <div class="cons-dir-cerc">
         <a href="#" id="r1">Presedinte</a>
         <a href="#" id="r2">Prim<br>Vicepresedinte</a>
         <a href="#" id="r3">Vicepresedinte<br>Externe</a>
-        <a href="#" id="r4">Secretar<br>General</a>
-        <a href="#" id="r5">Director<br>General</a>
-        <a href="#" id="r6">Vicepresedinte<br><span>Zona Vest</span></a>
-        <a href="#" id="r7">Vicepresedinte<br><span>Zona Centru-Nord</span></a>
-        <a href="#" id="r8">Vicepresedinte<br><span>Zona Est</span></a>
-        <a href="#" id="r9">Vicepresedinte<br><span>Zona Sud-Vest</span></a>
-        <a href="#" id="r10">Vicepresedinte<br><span>Zona Sud-Est</span></a>
+        <a href="#" id="r4">Vicepresedinte<br>Educational</a>
+        <a href="#" id="r5">Vicepresedinte<br>Proiecte</a>
+        <a href="#" id="r6">Secretar General</a>
+        <a href="#" id="r7">Secretar General<br>Adjunct</a>
+        <a href="#" id="r8">Director General</a>
+        <a href="#" id="r9">Director General<br>Adjunct</a>
+        <a href="#" id="r10">Vicepresedinte<br><span>Zona Vest</span></a>
+        <a href="#" id="r11">Vicepresedinte<br><span>Zona Centru-Nord</span></a>
+        <a href="#" id="r12">Vicepresedinte<br><span>Zona Est</span></a>
+        <a href="#" id="r13">Vicepresedinte<br><span>Zona Sud-Vest</span></a>
+        <a href="#" id="r14">Vicepresedinte<br><span>Zona Sud-Est</span></a>
         <p id="centru">Consiliul<br>Director</p>
       </div>
     </div>
 
-    <ul class="structura-list">
+    <ul class="cons-dir-list">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vasile.png" alt="Alexandru Vasile">
       
@@ -46,7 +39,7 @@
           <p class="nume">Alexandru Vasile</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -57,7 +50,7 @@
           <p class="nume">Cosmin Petcu</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -68,7 +61,29 @@
           <p class="nume">Mădălina Vătafu</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
+      
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chirca.jpg" alt="Mihaela Chircă">
+      
+        <div class="wrapper">
+          <p class="functie">Vicepresedinte Educațional</p>
+          <p class="nume">Mihaela Chircă</p>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
+      
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tudor.jpg" alt="Adelina Tudor">
+      
+        <div class="wrapper">
+          <p class="functie">Vicepresedinte Proiecte</p>
+          <p class="nume">Adelina Tudor</p>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -79,7 +94,18 @@
           <p class="nume">Andrei Găvenea</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
+      
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/melinte.png" alt="Andreea Melinte">
+      
+        <div class="wrapper">
+          <p class="functie">Secretar General Adjunct</p>
+          <p class="nume">Andreea Melinte</p>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -90,7 +116,18 @@
           <p class="nume">Alexander Andrei</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
+      
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/alecu.jpg" alt="Eduard Alecu">
+      
+        <div class="wrapper">
+          <p class="functie">Director General Adjunct</p>
+          <p class="nume">Eduard Alecu</p>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -101,7 +138,7 @@
           <p class="nume">Bogdan Avram</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -112,7 +149,7 @@
           <p class="nume">Mădălina Pasca</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -123,7 +160,7 @@
           <p class="nume">Christo Conuţ</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -134,7 +171,7 @@
           <p class="nume">Ana Păvălan</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
       <li>
@@ -145,11 +182,13 @@
           <p class="nume">Mihai Ţăvîrlău</p>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>angle-right-b</title><g fill="#020202"><path d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.3 1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47z"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       
       </li>
     </ul>
 
   </main>
+
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/cons-dir-insert-data.js"></script>
 
 <?php get_footer() ?>
