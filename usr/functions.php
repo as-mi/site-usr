@@ -34,7 +34,10 @@ function usr_enqueue_style() {
         wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array('purecss', 'main'));
     }
     if(is_page('despre')){
-        wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/despre.css', array('purecss', 'main'));
+        wp_enqueue_style('despre', get_template_directory_uri() . '/assets/css/despre.css', array('purecss', 'main'));
+    }
+    if(is_page('statut')){
+        wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
     }
 }
 

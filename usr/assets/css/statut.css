@@ -1,0 +1,119 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/background.jpg');
+  background-position: center 20%;
+}
+
+@media only screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../img/background4K.jpg'),
+      linear-gradient(0deg, rgba(11, 39, 75, 1) 0%, rgba(7, 58, 121, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+main {
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.right-textbox {
+  position: relative;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  right: 0;
+  transition: right 300ms ease-out;
+  cursor: pointer;
+}
+
+.right-textbox.collapsed {
+  right: -480px;
+}
+
+.right-textbox .wrapper {
+  width: 90%;
+}
+
+.right-textbox>svg g {
+  fill: var(--text-color);
+}
+
+.right-textbox:not(.collapsed)>svg {
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 2100px) {
+  .right-textbox {
+    width: 700px;
+  }
+
+  .right-textbox.collapsed {
+    right: -680px;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .right-textbox {
+    width: 700px;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  .right-textbox {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .right-textbox {
+    width: 350px;
+  }
+
+  .right-textbox.collapsed {
+    right: -340px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .right-textbox {
+    width: 250px;
+  }
+
+  .right-textbox>.wrapper {
+    width: 80%;
+  }
+
+  .right-textbox.collapsed {
+    right: -230px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .left-textbox {
+    margin-bottom: 0;
+  }
+
+  .right-textbox {
+    position: static;
+    justify-content: center;
+  }
+
+  .right-textbox svg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .right-textbox>.wrapper {
+    width: 90%;
+  }
+}

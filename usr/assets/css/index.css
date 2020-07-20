@@ -4,11 +4,18 @@ body {
   background-position: center 20%;
 }
 
+@media only screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../img/background4K.jpg'),
+      linear-gradient(0deg, rgba(11, 39, 75, 1) 0%, rgba(7, 58, 121, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 main {
-  margin-top: 30px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .hero-title,
