@@ -39,6 +39,10 @@ function usr_enqueue_style() {
     if(is_page('statut')){
         wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
     }
+    if(is_page_template('page-templates/prez-pers.php')){
+        wp_enqueue_style('flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css', array('purecss', 'main'));
+        wp_enqueue_style('prez-pers', get_template_directory_uri() . '/assets/css/prez-pers.css', array('purecss', 'main', 'flickity'));
+    }
 }
 
 add_action('wp_enqueue_scripts', 'usr_enqueue_style');

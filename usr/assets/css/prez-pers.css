@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/background.jpg');
+  background-position: center 20%;
+}
+
+@media only screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../img/background4K.jpg'),
+      linear-gradient(0deg, rgba(11, 39, 75, 1) 0%, rgba(7, 58, 121, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+main {
+  justify-content: space-between;
+}
+
+.right-textbox img {
+  width: 200px;
+  height: auto;
+}
+
+.right-textbox ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.right-textbox ul li:last-of-type::before {
+  content: url(../icons/facebook-messenger.svg);
+  vertical-align: top;
+  padding-right: 5px;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel,
+.carousel .flickity-viewport {
+  height: 120px !important;
+}
+
+.flickity-button:disabled {
+  opacity: 1;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+}
+
+.flickity-prev-next-button.next {
+  right: -45px;
+}
+
+.flickity-prev-next-button.previous {
+  left: -45px;
+}
+
+.carousel-cell {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
+.carousel-cell>img {
+  width: 100px;
+  height: auto;
+}
+
+.flickity-button-icon {
+  fill: #333 !important;
+}
