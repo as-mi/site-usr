@@ -27,12 +27,26 @@ main {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.right-textbox ul li {
+  margin: 5px 15px;
 }
 
 .right-textbox ul li:last-of-type::before {
-  content: url(../icons/facebook-messenger.svg);
-  vertical-align: top;
+  content: "";
+  display: inline-block;
+  background-image: url(../icons/facebook-messenger.svg);
+  height: 1.2rem;
+  width: 1.2rem;
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
   padding-right: 5px;
+  vertical-align: text-top;
+  position: relative;
+  top: 0.3rem;
 }
 
 .carousel-wrapper {
@@ -44,7 +58,7 @@ main {
 
 .carousel,
 .carousel .flickity-viewport {
-  height: 120px !important;
+  min-height: 120px !important;
 }
 
 .flickity-button:disabled {
@@ -52,8 +66,8 @@ main {
 }
 
 .flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .flickity-prev-next-button.next {
@@ -77,6 +91,87 @@ main {
   height: auto;
 }
 
+.carousel-cell figcaption {
+  text-align: center;
+}
+
 .flickity-button-icon {
   fill: #333 !important;
+}
+
+@media only screen and (min-width: 2100px) {
+  .carousel-cell>img {
+    width: 125px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .carousel-cell>img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  .carousel-cell>img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .carousel-cell {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  main {
+    flex-direction: column;
+  }
+
+  .textbox {
+    margin: 0;
+    width: 100vw !important;
+    border-radius: 0;
+    align-items: center;
+    min-height: 200px;
+    margin-bottom: 70px;
+  }
+
+
+  .carousel-cell {
+    width: 25%;
+  }
+
+  .textbox>* {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .carousel-cell {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-cell>img {
+    width: 75px;
+    height: auto;
+  }
+
+  .flickity-prev-next-button.next,
+  .flickity-prev-next-button.previous {
+    top: 40%;
+  }
+
+  .flickity-prev-next-button.next {
+    right: -30px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -30px;
+  }
 }
