@@ -8,6 +8,12 @@ $ docker-compose up
 
 Site-ul Wordpress poate fi accesat la adresa `localhost:8080`.
 
+## Creare Pagină Prezentare
+
+TODO
+
+
+
 ## Referințe
 
 - [How to Create a Custom WordPress Theme](https://www.youtube.com/watch?v=-h7gOJbIpmo)

@@ -6,20 +6,24 @@
 
 get_header(); ?>
 
+<!-- CITESTE FISIERUL README.md PENTRU A VEDEA CUM SA CREEZI O PAGINA DE PREZENTARE -->
+
 
 <main>
   <?php while ( have_posts() ) : the_post(); ?>
     <div class="textbox left-textbox">
       <h1 class="hero-title"><?php the_title(); ?></h1>
       <h2 class="hero-title">Istoric</h2>
-      <div class="carousel-wrapper">
-        <div class="carousel"
-          data-flickity='{
-            "cellAlign": "left",
-            "pageDots": false,
-            "wrapAround": true
-          }'>
-          <!-- <div class="carousel-cell">1</div> -->
+      <div class="carousel-element">
+        <div class="carousel-wrapper">
+          <div class="carousel"
+            data-flickity='{
+              "cellAlign": "left",
+              "pageDots": false,
+              "wrapAround": true
+            }'>
+            <!-- <div class="carousel-cell">1</div> -->
+          </div>
         </div>
       </div>
       <!-- JS will inject elements here -->
