@@ -12,7 +12,7 @@ Site-ul Wordpress poate fi accesat la adresa `localhost:8080`.
 
 Exemplu:
 
-![](C:\Users\micu\Desktop\Capture.PNG)
+![Exemplu pagina template](https://i.ibb.co/WBmZF7f/Capture.png)
 
 1. Se alege template-ul "Pagina Prezentare Persoana" din meniul din dreapta al editorului
 2. Titlul paginii va se va găsi în secțiunea din stânga și reprezintă statutul persoanei, în exemplu "Presedinte"
