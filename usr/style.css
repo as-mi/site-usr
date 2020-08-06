@@ -70,6 +70,34 @@ main {
   }
 }
 
+/* FLICKITY RULES */
+.flickity-button-icon {
+  fill: #333 !important;
+}
+
+.flickity-button:disabled {
+  opacity: 1;
+}
+
+.flickity-prev-next-button.next {
+  right: -45px;
+}
+
+.flickity-prev-next-button.previous {
+  left: -45px;
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-cell figcaption {
+  text-align: center;
+}
+
 /* HEADER */
 header {
   position: relative;

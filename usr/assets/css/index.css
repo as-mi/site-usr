@@ -25,11 +25,42 @@ main {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
 .hero-text {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.carousel-wrapper {
+  width: 70vw;
+  margin: 50px auto;
+}
+
+.flickity-prev-next-button {
+  top: 95px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-cell {
+  width: 33.33%;
+}
+
+.carousel-cell a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.carousel-cell img {
+  width: 15rem;
+  height: auto;
+}
+
+.carousel-cell figcaption {
+  height: 50px;
 }

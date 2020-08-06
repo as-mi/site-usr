@@ -11,6 +11,7 @@ function usr_setup_theme_supported_features() {
     add_theme_support('title-tag');
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script') );
     add_theme_support('custom-logo');
+    add_theme_support( 'post-thumbnails' ); 
 }
 
 add_action('after_setup_theme', 'usr_setup_theme_supported_features');
@@ -20,12 +21,15 @@ function usr_enqueue_style() {
     // Add PureCSS modules
     wp_enqueue_style('purecss', 'https://unpkg.com/purecss@2.0.3/build/pure-min.css');
 
+    // Add Flickity
+    wp_enqueue_style('flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
+
     // Add own stylesheet
     wp_enqueue_style('main', get_stylesheet_uri(), array('purecss'));
 
     // Add extra stylesheet depending on page
     if(is_front_page()){
-        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss', 'main'));
+        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss', 'main', 'flickity'));
     }
     if(is_page('cons-dir')){
         wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array('purecss', 'main'));
@@ -40,7 +44,6 @@ function usr_enqueue_style() {
         wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
     }
     if(is_page_template('page-templates/prez-pers.php')){
-        wp_enqueue_style('flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css', array('purecss', 'main'));
         wp_enqueue_style('prez-pers', get_template_directory_uri() . '/assets/css/prez-pers.css', array('purecss', 'main', 'flickity'));
     }
 }
