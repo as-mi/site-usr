@@ -31,20 +31,23 @@ function usr_enqueue_style() {
     if(is_front_page()){
         wp_enqueue_style('front-page', get_template_directory_uri() . '/assets/css/front-page.css', array('purecss', 'main', 'flickity'));
     }
-    if(is_page('cons-dir')){
+    else if(is_page('cons-dir')){
         wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array('purecss', 'main'));
     }
-    if(is_page('structura')){
+    else if(is_page('structura')){
         wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array('purecss', 'main'));
     }
-    if(is_page('despre')){
+    else if(is_page('despre')){
         wp_enqueue_style('despre', get_template_directory_uri() . '/assets/css/despre.css', array('purecss', 'main'));
     }
-    if(is_page('statut')){
+    else if(is_page('statut')){
         wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
     }
-    if(is_page_template('page-templates/prez-pers.php')){
+    else if(is_page_template('page-templates/prez-pers.php')){
         wp_enqueue_style('prez-pers', get_template_directory_uri() . '/assets/css/prez-pers.css', array('purecss', 'main', 'flickity'));
+    }
+    else{
+        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss', 'main', 'flickity'));
     }
 }
 
