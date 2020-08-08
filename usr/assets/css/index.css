@@ -25,11 +25,82 @@ main {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
 .hero-text {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.carousel-wrapper {
+  width: 70vw;
+  margin: 50px auto;
+}
+
+.flickity-prev-next-button {
+  /* 50px = inaltimea figcaption-urilor */
+  top: calc((100% - 50px) / 2);
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-cell {
+  width: 33.33%;
+}
+
+.carousel-cell a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.carousel-cell img {
+  width: 90%;
+  height: auto;
+}
+
+.carousel-cell figcaption {
+  height: 50px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 2100px) {
+  .carousel-cell {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .carousel-wrapper {
+    width: 80vw;
+  }
+
+  .flickity-prev-next-button.next {
+    right: -35px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -35px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-wrapper {
+    width: 70vw;
+  }
+
+  .carousel-cell {
+    width: 50%;
+  }
 }

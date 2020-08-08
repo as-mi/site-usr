@@ -61,42 +61,18 @@ main {
   min-height: 120px !important;
 }
 
-.flickity-button:disabled {
-  opacity: 1;
-}
-
 .flickity-prev-next-button {
   width: 2rem;
   height: 2rem;
 }
 
-.flickity-prev-next-button.next {
-  right: -45px;
-}
-
-.flickity-prev-next-button.previous {
-  left: -45px;
-}
-
 .carousel-cell {
   width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: visible;
 }
 
 .carousel-cell>img {
   width: 100px;
   height: auto;
-}
-
-.carousel-cell figcaption {
-  text-align: center;
-}
-
-.flickity-button-icon {
-  fill: #333 !important;
 }
 
 @media only screen and (min-width: 2100px) {
