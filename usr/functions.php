@@ -29,7 +29,7 @@ function usr_enqueue_style() {
 
     // Add extra stylesheet depending on page
     if(is_front_page()){
-        wp_enqueue_style('index', get_template_directory_uri() . '/assets/css/index.css', array('purecss', 'main', 'flickity'));
+        wp_enqueue_style('front-page', get_template_directory_uri() . '/assets/css/front-page.css', array('purecss', 'main', 'flickity'));
     }
     if(is_page('cons-dir')){
         wp_enqueue_style('cons-dir', get_template_directory_uri() . '/assets/css/cons-dir.css', array('purecss', 'main'));
