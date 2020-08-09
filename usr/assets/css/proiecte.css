@@ -1,0 +1,110 @@
+.textbox {
+  width: 80vw;
+}
+
+.textbox>* {
+  width: 100% !important;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.proiecte-cell {
+  width: 100%;
+}
+
+.proiecte-cell.is-selected {
+  opacity: 1;
+}
+
+.proiecte-cell:not(.is-selected) {
+  opacity: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-wrapper>* {
+  flex-basis: 50%;
+}
+
+.proiecte-carousel .flickity-page-dots {
+  bottom: 0;
+}
+
+.proiecte-carousel .flickity-page-dots .dot {
+  background: var(--text-color);
+}
+
+.content-wrapper .img-content {
+  display: grid;
+  place-items: center;
+}
+
+.img-carousel {
+  width: 70%;
+}
+
+.img-carousel .flickity-prev-next-button {
+  width: 2rem;
+  height: 2rem;
+}
+
+.img-cell {
+  width: 100%;
+}
+
+.btn-primary {
+  margin: 30px 0;
+}
+
+@media only screen and (min-width: 2100px) {
+  .flickity-prev-next-button.next {
+    right: -60px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -60px;
+  }
+
+  .btn-primary {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  .flickity-prev-next-button.next {
+    right: -80px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -80px;
+  }
+
+  .btn-primary {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .img-content {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .textbox {
+    margin: 0;
+    flex-grow: 2;
+    justify-content: flex-start;
+  }
+}
