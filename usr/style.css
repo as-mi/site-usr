@@ -126,6 +126,10 @@ header {
   transform-origin: top;
 }
 
+.header-nav > .pure-menu-item{
+  position: relative;
+}
+
 .pure-menu-has-children>.pure-menu-link:after {
   font-size: 1.2rem;
 }
@@ -205,6 +209,16 @@ header {
     top: 0;
   }
 
+  .header-nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pure-menu-has-children{
+    display: flex;
+    flex-direction: column;
+  }
+
   header,
   .pure-menu-link {
     background-color: var(--primary-color);
@@ -222,6 +236,11 @@ header {
   /* always display the subitems on mobile */
   .pure-menu-children{
     display: block;
+    position: static;
+  }
+
+  .pure-menu-allow-hover:hover > .pure-menu-children{
+    position: static;
   }
 
   /* indent submenu items to distinguish them from the main nav items */

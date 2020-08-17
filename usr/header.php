@@ -24,6 +24,7 @@
     </a>
     
     <ul class="header-nav pure-menu-list">
+      <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Acasa</a></li>
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
         <a href="/despre" class="pure-menu-link">Despre</a>
         <ul class="pure-menu-children">
@@ -35,7 +36,13 @@
       <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Proiecte</a></li>
       <li class="pure-menu-item"><a href="/membri" class="pure-menu-link">Membri</a></li>
       <li class="pure-menu-item"><a href="/traininguri" class="pure-menu-link">Training-uri</a></li>
-      <li class="pure-menu-item"><a href="/news" class="pure-menu-link">News</a></li>
+      <!-- <li class="pure-menu-item"><a href="/news" class="pure-menu-link">News</a></li> -->
+      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+        <a href="/news" class="pure-menu-link">News</a>
+        <ul class="pure-menu-children">
+          <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">Blog</a></li>
+        </ul>
+      </li>
       <li class="pure-menu-item"><a href="/comunicate" class="pure-menu-link">Comunicate</a></li>
       <li class="pure-menu-item"><a href="/parteneri" class="pure-menu-link">Parteneri</a></li>
       <li class="pure-menu-item"><a href="/contact" class="pure-menu-link">Contact</a></li>
