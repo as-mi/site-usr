@@ -52,3 +52,18 @@ function usr_enqueue_style() {
 }
 
 add_action('wp_enqueue_scripts', 'usr_enqueue_style');
+
+// Add custom post types to WordPress
+function usr_post_types(){
+    register_post_type( 'projects', array(
+        "public" => true,
+        "show_in_rest" => true,
+        "labels" => array(
+          "name" => "Proiecte",
+          "add_new_item" => "Add Project"
+        ),
+        "menu_icon" => "dashicons-book-alt"
+      ));
+}
+
+add_action('init', 'usr_post_types');
