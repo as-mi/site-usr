@@ -28,30 +28,6 @@ function mobileNav(ev) {
   }
 }
 
-function repositionNavItems() {
-  //* Make submenus visible from the start
-  const menuItems = document.querySelectorAll('.header-nav>li');
-  console.log(menuItems);
-
-  // menuItems[3].style.top = "500px";
-
-  menuItems.forEach((item, index) => {
-    if (item.classList.contains('pure-menu-has-children')) {
-      // const parentElementBottomPosition = item.getBoundingClientRect().y + item.offsetHeight;
-      // console.log(parentElementBottomPosition);
-      // const subitemsHeight;
-      const subMenu = item.children[1];
-      subMenu.style.left = '0';
-      subMenu.style.top = item.offsetHeight + 'px';
-
-      //* Move subsequent items down
-      for (let i = index + 1; i < menuItems.length; i++) {
-        menuItems[i].style.top = subMenu.offsetHeight + 'px';
-      }
-    }
-  });
-}
-
 function init() {
   menuBtn.innerHTML = menuIcons.burger;
   window.addEventListener('DOMContentLoaded', mobileNav);
@@ -59,11 +35,6 @@ function init() {
   menuBtn.addEventListener('click', () => {
     nav.classList.toggle('hidden');
     menuBtn.innerHTML = (menuBtn.innerHTML === menuIcons.burger) ? menuIcons.x : menuIcons.burger;
-
-    //* If button was clicked to show the menu, recalculate items positions
-    if (!nav.classList.contains('hidden')) {
-      repositionNavItems();
-    }
   });
 }
 
