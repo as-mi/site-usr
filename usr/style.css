@@ -132,8 +132,9 @@ header {
 
 .pure-menu-link {
   font-size: 1.4rem;
-  padding: 1rem 1rem 1.3rem 1rem;
+  padding: 1.3rem 1.3rem 1.6rem 1.3rem;
   color: #b1b1b1;
+  box-sizing: border-box;
 }
 
 .pure-menu-link:hover {
@@ -186,16 +187,12 @@ header {
 @media only screen and (max-width: 1250px) {
   .pure-menu-link {
     font-size: 1.2rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .pure-menu-link {
     font-size: 1.1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 }
 
@@ -215,11 +212,26 @@ header {
 
   /* Give nav items a minimum fixed width on mobile */
   .pure-menu-link {
-    min-width: 200px;
+    min-width: 250px;
   }
 
   .pure-menu-link:hover {
     background-color: var(--primary-color);
+  }
+
+  /* always display the subitems on mobile */
+  .pure-menu-children{
+    display: block;
+  }
+
+  /* indent submenu items to distinguish them from the main nav items */
+  .pure-menu-children .pure-menu-link{
+    padding-left: 3rem !important;
+  }
+
+  /* point the arrow of elements that have subitems down */
+  .pure-menu-has-children>.pure-menu-link:after{
+    content: "\25BE";
   }
 
   .header-divider {
