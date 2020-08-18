@@ -19,12 +19,12 @@
       </g>
     </svg>
 
-    <a href="/index.php">
+    <a href="/">
       <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo USR">
     </a>
     
     <ul class="header-nav pure-menu-list">
-      <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Acasa</a></li>
+      <li class="pure-menu-item"><a href="/" class="pure-menu-link">Acasa</a></li>
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
         <a href="/despre" class="pure-menu-link">Despre</a>
         <ul class="pure-menu-children">

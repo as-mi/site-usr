@@ -17,7 +17,7 @@ const menuIcons = {
 };
 
 function mobileNav(ev) {
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth <= 1100) {
     wrapper.classList.remove('pure-menu-horizontal');
     menuBtn.classList.remove('hidden');
     nav.classList.add('hidden');
