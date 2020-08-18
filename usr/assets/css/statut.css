@@ -31,7 +31,7 @@ main {
 }
 
 .right-textbox.collapsed {
-  right: -480px;
+  right: -420px;
 }
 
 .right-textbox .wrapper {
@@ -52,43 +52,21 @@ main {
   }
 
   .right-textbox.collapsed {
-    right: -680px;
-  }
-}
-
-@media only screen and (min-width: 2400px) {
-  .right-textbox {
-    width: 700px;
-  }
-}
-
-@media only screen and (min-width: 3500px) {
-  .right-textbox {
-    width: 700px;
+    right: -620px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
+  .left-textbox{
+    width: 50vw;
+  }
+
   .right-textbox {
     width: 350px;
   }
 
   .right-textbox.collapsed {
-    right: -340px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .right-textbox {
-    width: 250px;
-  }
-
-  .right-textbox>.wrapper {
-    width: 80%;
-  }
-
-  .right-textbox.collapsed {
-    right: -230px;
+    right: -300px;
   }
 }
 
