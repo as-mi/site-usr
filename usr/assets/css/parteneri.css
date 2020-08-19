@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/background-parteneri.jpeg');
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main{
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.textbox{
+  width: 48vw;
+}
+
+.membra-in{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.membra-in > h2{
+  text-align: center;
+}
+
+.membra-in > img{
+  object-fit: contain;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.parteneri{
+  align-self: flex-start;
+}
+
+.parteneri > p{
+  margin-bottom: 30px;
+}
+
+.parteneri-slider,
+.parteneri-inst-slider{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.parteneri-slider > img,
+.parteneri-inst-slider > img{
+  object-fit: contain;
+  width: 45%;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 730px) {
+  .membra-in{
+    order: 2;
+    flex-direction: column;
+  }
+
+  .membra-in > h2{
+  text-align: left;
+  }
+
+  .membra-in > img{
+    width: 50%;
+  }
+
+  .textbox{
+    margin: 0;
+  }
+}

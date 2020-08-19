@@ -32,7 +32,7 @@
 
     <ul class="cons-dir-list">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vasile.png" alt="Alexandru Vasile">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/vasile.png" alt="Alexandru Vasile">
       
         <div class="wrapper">
           <p class="functie">Presedinte</p>
@@ -43,7 +43,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/petcu.jpg" alt="Cosmin Petcu">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/petcu.jpg" alt="Cosmin Petcu">
       
         <div class="wrapper">
           <p class="functie">Prim Vicepresedinte</p>
@@ -54,7 +54,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vatafu.jpeg" alt="Mădălina Vătafu">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/vatafu.jpeg" alt="Mădălina Vătafu">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte Externe</p>
@@ -65,7 +65,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chirca.jpg" alt="Mihaela Chircă">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/chirca.jpg" alt="Mihaela Chircă">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte Educațional</p>
@@ -76,7 +76,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tudor.jpg" alt="Adelina Tudor">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/tudor.jpg" alt="Adelina Tudor">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte Proiecte</p>
@@ -87,7 +87,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gavenea.jpg" alt="Andrei Găvenea">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/gavenea.jpg" alt="Andrei Găvenea">
       
         <div class="wrapper">
           <p class="functie">Secretar General</p>
@@ -98,7 +98,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/melinte.png" alt="Andreea Melinte">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/melinte.png" alt="Andreea Melinte">
       
         <div class="wrapper">
           <p class="functie">Secretar General Adjunct</p>
@@ -109,7 +109,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/alexander.jpg" alt="Alexander Andrei">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/alexander.jpg" alt="Alexander Andrei">
       
         <div class="wrapper">
           <p class="functie">Director General</p>
@@ -120,7 +120,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/alecu.jpg" alt="Eduard Alecu">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/alecu.jpg" alt="Eduard Alecu">
       
         <div class="wrapper">
           <p class="functie">Director General Adjunct</p>
@@ -131,7 +131,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/avram.jpg" alt="Bogdan Avram">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/avram.jpg" alt="Bogdan Avram">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte<br>Zona Vest</p>
@@ -142,7 +142,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pasca.jpg" alt="Mădălina Pasca">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/pasca.jpg" alt="Mădălina Pasca">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte<br>Zona Centru-Nord</p>
@@ -153,7 +153,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/conut.jpg" alt="Christo Conuţ">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/conut.jpg" alt="Christo Conuţ">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte<br>Zona Est</p>
@@ -164,7 +164,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pavalan.jpg" alt="Ana Păvălan">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/pavalan.jpg" alt="Ana Păvălan">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte<br>Zona Sud-Vest</p>
@@ -175,7 +175,7 @@
       
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tavirlau.jpg" alt="Mihai Ţăvîrlău">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/tavirlau.jpg" alt="Mihai Ţăvîrlău">
       
         <div class="wrapper">
           <p class="functie">Vicepresedinte<br>Zona Sud-Est</p>
