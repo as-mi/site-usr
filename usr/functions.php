@@ -43,6 +43,9 @@ function usr_enqueue_style() {
     else if(is_page('statut')){
         wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
     }
+    else if(is_page('proiecte')){
+        wp_enqueue_style('proiecte', get_template_directory_uri() . '/assets/css/proiecte.css', array('purecss', 'main', 'flickity'));
+    }
     else if(is_page_template('page-templates/prez-pers.php')){
         wp_enqueue_style('prez-pers', get_template_directory_uri() . '/assets/css/prez-pers.css', array('purecss', 'main', 'flickity'));
     }
