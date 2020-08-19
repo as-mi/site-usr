@@ -46,6 +46,14 @@ Version: 1.0
   color: var(--text-color);
 }
 
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.7rem;
+}
+
 body {
   min-height: 100vh;
   position: relative;

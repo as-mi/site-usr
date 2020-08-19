@@ -26,7 +26,7 @@
 
     <ul class="structura-list">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/alexander.jpg" alt="Alexander Andrei">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/alexander.jpg" alt="Alexander Andrei">
       
         <div class="wrapper">
           <p class="functie">Director General</p>
@@ -36,7 +36,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marcvart.png" alt="Cristian Marcvart">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/marcvart.png" alt="Cristian Marcvart">
       
         <div class="wrapper">
           <p class="functie">Director National<br>Marketing&PR</p>
@@ -46,7 +46,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/balan.png" alt="Elena Bălan">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/balan.png" alt="Elena Bălan">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Resurse Umane</p>
@@ -56,7 +56,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cazacu.png" alt="Cristiana Cazacu">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/cazacu.png" alt="Cristiana Cazacu">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Mediu</p>
@@ -66,7 +66,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stoica.png" alt="Francesca Stoica">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/stoica.png" alt="Francesca Stoica">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Fundraising</p>
@@ -76,7 +76,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ivaz.png" alt="Lăcrămioara Ivaz">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/ivaz.png" alt="Lăcrămioara Ivaz">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Training</p>
@@ -86,7 +86,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/paunescu.png" alt="Tobias Păunescu">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/paunescu.png" alt="Tobias Păunescu">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Scriere Proiecte</p>
@@ -96,7 +96,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>ellipsis-h</title><g fill="#020202"><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm-7 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></g></svg>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/korpos.png" alt="Alexandru Korpos">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membri/korpos.png" alt="Alexandru Korpos">
       
         <div class="wrapper">
           <p class="functie">Director Național<br>Administrativ</p>
