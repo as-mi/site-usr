@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/background-contact.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+main{
+  display: grid;
+  place-items: center;
+}
+
+.textbox{
+  width: 70vw;
+  background-color: rgba(7, 58, 121, 0.4);
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+input, textarea{
+  border: none !important;
+  box-shadow: none !important;
+  background-color: rgba(20, 94, 184, 0.4);
+}
+
+textarea{
+  resize: vertical;
+}
+
+button[type="submit"]{
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 30%;
+  align-self: center;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.contact-info svg{
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 15px;
+}
+
+.contact-info > div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info-date ul{
+  list-style: none;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .textbox{
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .textbox{
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .textbox{
+    height: 100%;
+  }
+
+  .content{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form{
+    width: 500px;
+    margin : 30px auto;
+  }
+
+  button[type="submit"]{
+    width: 200px;
+  }
+
+  .contact-info svg{
+    padding: 5px;
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  form{
+    width: 95%;
+  }
+  
+  .contact-info svg{
+    transform: scale(0.8);
+  }
+}
