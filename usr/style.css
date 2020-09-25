@@ -66,7 +66,7 @@ main {
   min-height: calc(100vh - var(--header-height-desktop) - var(--footer-height));
   display: flex;
   align-items: center;
-  width: 100%;
+  padding: 0 1rem;
   margin-bottom: var(--footer-height) !important;
 }
 
@@ -352,7 +352,7 @@ header {
 footer {
   background-color: var(--primary-color-transparent);
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: var(--footer-height);
   width: 100%;
