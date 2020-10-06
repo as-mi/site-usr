@@ -13,7 +13,7 @@ services:
       - ./mysql:/var/lib/mysql
 
   wordpress:
-    image: wordpress:5.4.2-php7.2
+    image: wordpress:5.5.1-php7.2
     depends_on:
       - db
     ports:
