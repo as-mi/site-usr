@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>USR - Uniunea Studentilor din Romania</title> -->
   <?php wp_head(); ?>
-  
+
 </head>
 
 <body>
@@ -22,7 +21,7 @@
     <a href="/">
       <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo USR">
     </a>
-    
+
     <ul class="header-nav pure-menu-list">
       <li class="pure-menu-item"><a href="/" class="pure-menu-link">Acasa</a></li>
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -30,20 +29,39 @@
         <ul class="pure-menu-children">
           <li class="pure-menu-item"><a href="/cons-dir" class="pure-menu-link">Consiliu Director</a></li>
           <li class="pure-menu-item"><a href="/structura" class="pure-menu-link">Structura</a></li>
-          <li class="pure-menu-item"><a href="/statut" class="pure-menu-link">Statut</a></li>
+          <!--
+            <li class="pure-menu-item"><a href="/statut" class="pure-menu-link">Statut</a></li>
+          -->
+          <li class="pure-menu-item"><a href="https://uniunea.ro/istoric/statutul-usr/" class="pure-menu-link">Statut</a></li>
         </ul>
       </li>
+      <!--
+        TODO: finish projects page
       <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Proiecte</a></li>
+      -->
+      <!--
+        TODO: finish members page
       <li class="pure-menu-item"><a href="/membri" class="pure-menu-link">Membri</a></li>
+      -->
+      <!--
+        TODO: finish trainings page
       <li class="pure-menu-item"><a href="/traininguri" class="pure-menu-link">Training-uri</a></li>
-      <!-- <li class="pure-menu-item"><a href="/news" class="pure-menu-link">News</a></li> -->
+      -->
+
+      <!--
+        TODO: finish news page
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
         <a href="/news" class="pure-menu-link">News</a>
         <ul class="pure-menu-children">
           <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">Blog</a></li>
         </ul>
       </li>
+      -->
+
+      <!--
+        TODO: finish announcements page
       <li class="pure-menu-item"><a href="/comunicate" class="pure-menu-link">Comunicate</a></li>
+      -->
       <li class="pure-menu-item"><a href="/parteneri" class="pure-menu-link">Parteneri</a></li>
       <li class="pure-menu-item"><a href="/contact" class="pure-menu-link">Contact</a></li>
     </ul>
