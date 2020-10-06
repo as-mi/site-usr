@@ -5,6 +5,7 @@
     <h1 class="hero-title"><?php the_title(); ?></h1>
 
     <div class="content">
+      <!--
       <form action="/" method="POST" class="pure-form pure-form-stacked">
         <label for="nume">Nume:</label>
         <input type="text" name="nume" id="nume" class="pure-input-1">
@@ -20,6 +21,7 @@
 
         <button type="submit">Trimite!</button>
       </form>
+      -->
 
       <div class="contact-info">
         <div class="contact-info-locatie">
