@@ -74,7 +74,7 @@ function create_partener(array $partenerData) {
     );
 
     if($partenerId != 0) {
-        wp_set_post_terms($partenerId, 'partener_' . $partenerData['location'], 'post_tag');
+        wp_set_post_terms($partenerId, 'partener-' . $partenerData['location'], 'post_tag');
         set_post_thumbnail($partenerId, $partenerData['image']);
         
     }
