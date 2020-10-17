@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+main, .pure-g {
+    width: 100%;
+}
+
+.box {
+  padding: 80px;
+}
+
+.box-content  {
+    padding: 40px;
+    background: #00000047;
+    border-radius: 10px 10px 0 0; 
+}
+
+.box-parteners {
+    background: #fff;
+    padding: 20px;
+    color: #000;
+    border-radius: 0 0 10px 10px;
+}
+.map {
+    width: 80%;
+    margin: auto;
+}
+
+.center {
+    justify-content: center;
+}
+.main-carousel, .carousel-cell {
+    width: 100%;
+}
+
+.flickity-viewport:focus {
+    outline: none!important;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }
+.flickity-viewport { overflow: hidden; }
+.flickity-enabled:focus {
+    outline: none;
+}
+.flickity-page-dots li {
+    display: inline;
+    margin: 10px
+}

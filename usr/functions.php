@@ -23,10 +23,12 @@ add_action('after_setup_theme', 'usr_setup_theme_supported_features');
 // Add our CSS stylesheets
 function usr_enqueue_style() {
     // Add PureCSS modules
-    wp_enqueue_style('purecss', 'https://unpkg.com/purecss@2.0.3/build/pure-min.css');
+    wp_enqueue_style('purecss', get_template_directory_uri() . '/assets/css/pure-min.css');
+    wp_enqueue_style('pure-grid', get_template_directory_uri() . '/assets/css/grids-responsive-min.css');
 
     // Add own stylesheet
     wp_enqueue_style('main', get_stylesheet_uri(), array('purecss'));
+    wp_enqueue_script('carousel', get_template_directory_uri() . '/assets/scripts/flickity.pkgd.min.js');
 
     // Add extra stylesheet depending on page
     if(is_front_page()){
@@ -38,8 +40,8 @@ function usr_enqueue_style() {
     else if(is_page('structura')){
         wp_enqueue_style('structura', get_template_directory_uri() . '/assets/css/structura.css', array('purecss', 'main'));
     }
-    else if(is_page('despre')){
-        wp_enqueue_style('despre', get_template_directory_uri() . '/assets/css/despre.css', array('purecss', 'main'));
+    else if (is_page('despre')) {
+        wp_enqueue_style('despre', get_template_directory_uri() . '/assets/css/about.css', array('purecss', 'pure-grid', 'main'));
     }
     else if(is_page('statut')){
         wp_enqueue_style('statut', get_template_directory_uri() . '/assets/css/statut.css', array('purecss', 'main'));
@@ -80,6 +82,15 @@ function usr_post_types(){
           "add_new_item" => "Add Partner"
         ),
         "menu_icon" => "dashicons-businessperson",
+        'supports' => [ 'title', 'editor', 'thumbnail' ],
+        'taxonomies' => ['post_tag']
+      ));
+
+      register_post_type( 'zones', array(
+        "public" => true,
+        "show_in_rest" => true,
+        "label" => "Zone",
+        "menu_icon" => "dashicons-admin-site",
         'supports' => [ 'title', 'editor', 'thumbnail' ],
         'taxonomies' => ['post_tag']
       ));
