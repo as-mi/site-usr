@@ -1,6 +1,6 @@
 <?php
 
-require_once(get_template_directory() . '/template-parts/page/page-settings.php');
+require_once(get_template_directory() . '/inc/admin/settings.php');
 
 // Tell WordPress we support menus
 function usr_setup_menus() {
@@ -8,9 +8,6 @@ function usr_setup_menus() {
 }
 
 add_action('init', 'usr_setup_menus');
-
-
-
 
 
 // Tell WordPress we support some extra features

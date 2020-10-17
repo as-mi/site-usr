@@ -2,7 +2,7 @@
 /**
  * Add componenets of settings page
  */
-require_once(get_template_directory() . "/inc/components/parteners.php");
+require_once(get_template_directory() . "/inc/admin/parteners.php");
  
 
 /**
