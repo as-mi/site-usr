@@ -24,8 +24,10 @@ function register_theme_settings_fields() {
 function display_bulk_parteners() {
     ?>
         <p>In order to upload more parteners upload a csv in the following format:</p>
-        <code>name | about | location | imageId</code>
-        <p>Csv separator is <code>,</code>, no header should be included, imageId is value generated from wordpress media upload</p> 
+        <code>name | about | location | imageId | imageUrl</code>
+        <p>Csv separator is <code>,</code>, no header should be included, <code>imageId</code> is value generated from wordpress media upload,
+         if <code>imageId</code> is set to 0 we will use <code>imageUrl</code>.
+        </p> 
         </br>
         <input type="file" name="parteners" /> 
    <?php
