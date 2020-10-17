@@ -1,10 +1,17 @@
 <?php
+
+require_once(get_template_directory() . '/template-parts/page/page-settings.php');
+
 // Tell WordPress we support menus
 function usr_setup_menus() {
     register_nav_menu('primary-menu', __('Primary Menu'));
 }
 
 add_action('init', 'usr_setup_menus');
+
+
+
+
 
 // Tell WordPress we support some extra features
 function usr_setup_theme_supported_features() {
@@ -66,6 +73,18 @@ function usr_post_types(){
           "add_new_item" => "Add Project"
         ),
         "menu_icon" => "dashicons-book-alt"
+      ));
+
+      register_post_type( 'parteners', array(
+        "public" => true,
+        "show_in_rest" => true,
+        "labels" => array(
+          "name" => "Parteneri",
+          "add_new_item" => "Add Partner"
+        ),
+        "menu_icon" => "dashicons-businessperson",
+        'supports' => [ 'title', 'editor', 'thumbnail' ],
+        'taxonomies' => ['post_tag']
       ));
 }
 
