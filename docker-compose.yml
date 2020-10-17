@@ -25,5 +25,6 @@ services:
       WORDPRESS_CONFIG_EXTRA: |
         /* Enable debug mode*/
         define('WP_DEBUG', true);
+        define( 'WP_DEBUG_LOG', '/dev/stdout' );
     volumes:
       - ./usr:/var/www/html/wp-content/themes/usr
