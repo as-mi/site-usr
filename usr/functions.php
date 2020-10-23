@@ -1,7 +1,9 @@
 <?php
 
 require_once(get_template_directory() . '/inc/admin/settings.php');
-
+if (!session_id()) {
+    session_start();
+}
 // Tell WordPress we support menus
 function usr_setup_menus() {
     register_nav_menu('primary-menu', __('Primary Menu'));
