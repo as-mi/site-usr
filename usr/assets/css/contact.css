@@ -37,7 +37,7 @@ textarea{
   resize: vertical;
 }
 
-button[type="submit"]{
+.send-btn{
   background-color: var(--primary-color);
   border: none;
   padding: 10px 20px;
@@ -93,7 +93,7 @@ button[type="submit"]{
     margin : 30px auto;
   }
 
-  button[type="submit"]{
+  .send-btn{
     width: 200px;
   }
 
