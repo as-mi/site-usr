@@ -28,9 +28,12 @@ function usr_enqueue_style() {
     wp_enqueue_style('purecss', get_template_directory_uri() . '/assets/css/pure-min.css');
     wp_enqueue_style('pure-grid', get_template_directory_uri() . '/assets/css/grids-responsive-min.css');
 
+    // Add Flickity
+    wp_enqueue_script('flickity', get_template_directory_uri() . '/assets/scripts/flickity.pkgd.min.js');
+    wp_enqueue_style('flickity', get_template_directory_uri() . '/assets/css/flickity.min.css');
+
     // Add own stylesheet
     wp_enqueue_style('main', get_stylesheet_uri(), array('purecss'));
-    wp_enqueue_script('carousel', get_template_directory_uri() . '/assets/scripts/flickity.pkgd.min.js');
 
     // Add extra stylesheet depending on page
     if(is_front_page()){
