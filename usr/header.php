@@ -35,10 +35,7 @@
           <li class="pure-menu-item"><a href="https://uniunea.ro/istoric/statutul-usr/" class="pure-menu-link">Statut</a></li>
         </ul>
       </li>
-      <!--
-        TODO: finish projects page
       <li class="pure-menu-item"><a href="/proiecte" class="pure-menu-link">Proiecte</a></li>
-      -->
       <!--
         TODO: finish members page
       <li class="pure-menu-item"><a href="/membri" class="pure-menu-link">Membri</a></li>

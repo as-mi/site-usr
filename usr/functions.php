@@ -57,6 +57,9 @@ function usr_enqueue_style() {
     else if(is_page('contact')){
         wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css', array('purecss', 'main'));
     }
+    else if(is_page('proiecte')){
+        wp_enqueue_style('proiecte', get_template_directory_uri() . '/assets/css/proiecte.css', array('purecss', 'main'));
+    }
     else if(is_page_template('page-templates/prez-pers.php')){
         wp_enqueue_style('prez-pers', get_template_directory_uri() . '/assets/css/prez-pers.css', array('purecss', 'main'));
     }
@@ -76,7 +79,8 @@ function usr_post_types(){
           "name" => "Proiecte",
           "add_new_item" => "Add Project"
         ),
-        "menu_icon" => "dashicons-book-alt"
+        "menu_icon" => "dashicons-book-alt",
+        'supports' => [ 'title', 'editor', 'thumbnail' ]
       ));
 
       register_post_type( 'parteners', array(
