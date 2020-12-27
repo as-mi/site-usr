@@ -1,21 +1,21 @@
-<?php 
+<?php
 /*
  * Template Name: Contact
  * Description: Contact form page
  */
-require_once(get_template_directory() . "/inc/utils/security.php"); 
-get_header(); 
+require_once(get_template_directory() . "/inc/utils/security.php");
+get_header();
 session_start();
 
   $sendWithSuccess = null;
   // Check for POST
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   
+
     $requiredFields = isset($_POST['c-name'], $_POST['c-email'], $_POST['c-subject'], $_POST['csrf_token'], $_POST['c-message']);
     $csrf = get_csrf_token() == $_POST['csrf_token'];
     $validEmails = isEmailValid($_POST['c-email']) && isEmailValid(get_option('contact_email'));
-    
-    // Some safety 
+
+    // Some safety
     if ($requiredFields && $csrf && $validEmails) {
 
       $body = "Nume: " . $_POST['c-name'] . " \n" .
@@ -31,7 +31,7 @@ session_start();
   ?>
 
 <main>
-<?php 
+<?php
       if($sendWithSuccess === true) {
         echo "<h3>Mesajul a fost trimis</h3>";
       } else if($sendWithSuccess === false) {
@@ -43,7 +43,7 @@ session_start();
     <h3 class="hero-title"><?php the_title(); ?></h3>
 
     <div class="content">
-      
+
       <form action="<?php the_permalink();?>" method="POST" id="contact-form" class="pure-form pure-form-stacked">
         <label for="name">Nume:</label>
         <input type="text" name="c-name" id="nume" class="pure-input-1">
@@ -56,17 +56,17 @@ session_start();
 
         <label for="message">Mesajul dumneavoastra:</label>
         <textarea name="c-message" id="message" cols="30" rows="6" class="pure-input-1"></textarea>
-        
+
         <input type="hidden" name="csrf_token" value="<?php echo get_csrf_token(); ?>">
-        <button 
-          class="g-recaptcha send-btn" 
-          data-sitekey="<?php echo get_option('contact_google_key'); ?>" 
-          data-callback='onSubmit' 
+        <button
+          class="g-recaptcha send-btn"
+          data-sitekey="<?php echo get_option('contact_google_key'); ?>"
+          data-callback='onSubmit'
           data-action='submit'>
           Trimite!
         </button>
       </form>
-     
+
 
       <div class="contact-info">
         <div class="contact-info-locatie">

@@ -8,7 +8,13 @@ $ docker-compose up
 
 Site-ul Wordpress poate fi accesat la adresa `localhost:8080`.
 
-## Creare Pagină Prezentare
+## Administrare conținut
+
+## Adăugare proiecte
+
+A fost creat un custom post type pentru proiectele USR. Acestea pot fi administrate din meniul de admin WordPress, din tab-ul **Proiecte**.
+
+### Creare Pagină Prezentare
 
 Exemplu:
 

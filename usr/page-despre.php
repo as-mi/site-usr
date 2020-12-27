@@ -6,10 +6,10 @@
 
 get_header(); ?>
 
-<main>  
+<main>
     <div class="main-carousel" data-flickity='{ "pageDots": true, "prevNextButtons": false }'>
-              
-<?php 
+
+<?php
 
 const TAG_FORMAT = 'zone-';
 const MAX_PARTENERS = 5;
@@ -26,7 +26,7 @@ $args = array(
 
 $zones = get_posts( $args );
 
-foreach ($zones as $zone) { 
+foreach ($zones as $zone) {
     $partenres = $zone->__get('tags_input');
 
     // remove tags that not contains TAG_FROMAT format & sanitize
@@ -37,7 +37,7 @@ foreach ($zones as $zone) {
             unset($partenres[$key]);
         }
     }
-    
+
     ?>
         <div class="carousel-cell" >
             <div class="pure-g">
@@ -45,17 +45,17 @@ foreach ($zones as $zone) {
                     <div class="box">
                         <div class="box-content">
                             <h1><?php echo $zone->post_title ?></h1>
-                            <p><?php echo $zone->excerpt ?></p>
+                            <p><?php echo get_the_excerpt($zone) ?></p>
                             <a  href="<?php echo get_permalink($zone->ID); ?>" >
                                 <button class="pure-button pure-button-primary">Mai multe informatii</button>
                             </a>
                         </div>
                         <div class="box-parteners">
                             <div class="pure-g" >
-                        <?php 
+                        <?php
                             $displayedParteners = 0;
                             foreach($partenres as $partener) {
-                            $query = new WP_Query( [ 
+                            $query = new WP_Query( [
                                 'post_type' => 'parteners',
                                 'tax_query' => [
                                     [
@@ -65,14 +65,14 @@ foreach ($zones as $zone) {
                                     ]
                                 ]
                             ]);
-                        
+
                             if($query->have_posts()) {
                                 while($query->have_posts()) {
                                     $query->the_post();
                                     if($displayedParteners >= MAX_PARTENERS) {
                                         break;
                                     }
-                                    
+
                                     echo '
                                     <div class="pure-u-1-' . MAX_PARTENERS . '">
                                     <img class="pure-img" src="' . get_the_post_thumbnail_url( get_the_ID(), 'full' ) . '"></div>';
@@ -93,7 +93,7 @@ foreach ($zones as $zone) {
             </div>
         </div>
 <?php } // end foreach loop ?>
- 
+
     </div>
 </main>
 
