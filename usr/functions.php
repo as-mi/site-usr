@@ -18,6 +18,8 @@ function usr_setup_theme_supported_features() {
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script') );
     add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
+    // Don't try to push the HTML page down to make space for the admin bar
+    add_theme_support('admin-bar', array('callback' => '__return_false'));
 }
 
 add_action('after_setup_theme', 'usr_setup_theme_supported_features');

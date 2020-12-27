@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="<?php echo get_body_class(); ?> <?php if (is_user_logged_in()) { echo 'logged-in'; } ?>">
   <header class="pure-menu pure-menu-horizontal">
     <svg class="header-menu-btn hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="#020202">

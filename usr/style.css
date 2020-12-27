@@ -110,8 +110,14 @@ header {
 }
 
 /* When the admin bar is displayed, move the nav bar a bit more to the bottom. */
-.admin-bar header {
-  top: 32px;
+body.logged-in > header {
+  margin-top: 46px;
+}
+
+@media (min-width: 782px) {
+  body.logged-in > header {
+    margin-top: 32px;
+  }
 }
 
 .header-logo {
@@ -209,7 +215,7 @@ header {
   header {
     height: var(--header-height-mobile);
     justify-content: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     overflow: hidden;
